@@ -37,7 +37,7 @@ while True:
 
     elif(produto == 102):
         print('Você escolheu X-Egg no valor de R$ 12,00 ')
-        total+= 11
+        total+= 12
         recomprar = input('Você deseja pedir mais alguma coisa? [S/N]')
         if(recomprar == 'S'):
             continue   
@@ -46,27 +46,18 @@ while True:
             break
 
     elif(produto == 103):
-        print('Você escolheu Cachorro-Quente Duplo no valor de R$ 11,00 ')
-        total+= 11
+        print('Você escolheu X-Salada no valor de R$ 12,00 ')
+        total+= 12
         recomprar = input('Você deseja pedir mais alguma coisa? [S/N]')
         if(recomprar == 'S'):
             continue   
         else:    
             print('O total da sua compra foi: R$ {}'.format(total))    
             break
-    elif(produto == 102):
-        print('Você escolheu Cachorro-Quente Duplo no valor de R$ 11,00 ')
-        total+= 11
-        recomprar = input('Você deseja pedir mais alguma coisa? [S/N]')
-        if(recomprar == 'S'):
-            continue   
-        else:    
-            print('O total da sua compra foi: R$ {}'.format(total))    
-            break
-
-    elif(produto == 102):
-        print('Você escolheu Cachorro-Quente Duplo no valor de R$ 11,00 ')
-        total+= 11
+        
+    elif(produto == 104):
+        print('Você escolheu X-Bacon no valor de R$ 14,00 ')
+        total+= 14
         recomprar = input('Você deseja pedir mais alguma coisa? [S/N]')
         if(recomprar == 'S'):
             continue   
@@ -74,15 +65,36 @@ while True:
             print('O total da sua compra foi: R$ {}'.format(total))    
             break
 
-    elif(produto == 102):
-        print('Você escolheu Cachorro-Quente Duplo no valor de R$ 11,00 ')
-        total+= 11
+    elif(produto == 105):
+        print('Você escolheu X-Tudo no valor de R$ 17,00 ')
+        total+= 17
         recomprar = input('Você deseja pedir mais alguma coisa? [S/N]')
         if(recomprar == 'S'):
             continue   
         else:    
             print('O total da sua compra foi: R$ {}'.format(total))    
             break
+
+    elif(produto == 200):
+        print('Você escolheu Refrigerante Lata no valor de R$ 5,00 ')
+        total+= 5
+        recomprar = input('Você deseja pedir mais alguma coisa? [S/N]')
+        if(recomprar == 'S'):
+            continue   
+        else:    
+            print('O total da sua compra foi: R$ {}'.format(total))    
+            break
+
+    elif(produto == 201):
+        print('Você escolheu Chá Gelado no valor de R$ 4,00 ')
+        total+= 4
+        recomprar = input('Você deseja pedir mais alguma coisa? [S/N]')
+        if(recomprar == 'S'):
+            continue   
+        else:    
+            print('O total da sua compra foi: R$ {}'.format(total))    
+            break
+
     else:
         print('Opção invalida... voltando para o menu principal')
         continue

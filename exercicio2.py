@@ -1,4 +1,4 @@
-print('Bem-vindo a lanchonete')
+print('Bem-vindo a lanchonete de Matheus Willian França')
 print('+', '-' * 35, '+')
 print('codigo |       Descrição       | Valor')
 print('100    |     Cachorro-Quente   | R$ 9')
@@ -54,7 +54,7 @@ while True:
         else:    
             print('O total da sua compra foi: R$ {}'.format(total))    
             break
-        
+
     elif(produto == 104):
         print('Você escolheu X-Bacon no valor de R$ 14,00 ')
         total+= 14

@@ -20,11 +20,12 @@ while True:
         print('Você escolheu Cachorro-Quente no valor de R$ 9,00 ')
         recomprar = input('Você deseja pedir mais alguma coisa? [S/N]')
         if(recomprar == 'S'):
-            continue   
-        else:    
-            print('O total da sua compra foi: R$ {}'.format(total))    
+            print('Obrigado, o total da sua compra foi: R$ {}'.format(total))
+            continue
+        else:
+            print('Valor incorreto')
             break
-
+        
     elif(produto == 101):
         print('Você escolheu Cachorro-Quente Duplo no valor de R$ 11,00 ')
         total+= 11

@@ -7,13 +7,13 @@ print('Bem-vindo a companhia de Logistica Matheus Willian França')
 
 
 def dimensoesObjeto():
-    while True:
-        comprimento = int(input('Digite o comprimento do objeto (Em CM)'))
-        largura = int(input('Digite o largura do objeto (Em CM)'))
-        altura = int(input('Digite a altura do objeto (Em CM)'))
-        volume = comprimento * largura * altura
-        print('Volume do seu objeto é de objeto {} cm3'.format(volume))    
+    while True:   
         try:
+            comprimento = int(input('Digite o comprimento do objeto (Em CM)'))
+            largura = int(input('Digite o largura do objeto (Em CM)'))
+            altura = int(input('Digite a altura do objeto (Em CM)'))
+            volume = comprimento * largura * altura
+            print('Volume do seu objeto é de objeto {} cm3'.format(volume)) 
             if(volume < 1000):
                 return 10
         

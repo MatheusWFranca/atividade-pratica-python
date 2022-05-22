@@ -1,0 +1,12 @@
+Entre com o valor unitário do produto (Lembrar que número decimal é feito com ponto e não vírgula); 
+
+Entre com a quantidade desse produto; 
+
+O programa deve retornar o valor total sem desconto; 
+
+O programa deve retornar o valor total após o desconto; 
+
+Deve-se utilizar estruturas if, elif e else (EXIGÊNCIA 1 de 1); 
+
+Colocar um exemplo de SAIDA DE CONSOLE de compra de mais de 10 und. (para mostrar que o desconto foi aplicado) 
+

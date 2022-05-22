@@ -1,0 +1,25 @@
+Enunciado: Você e sua equipe de programadores foram contratados para desenvolver um app de vendas para uma lanchonete. Você ficou com a parte de desenvolver a interface do cliente para retirada do produto. 
+
+A lanchonete possui seguinte tabela de produtos listados com sua descrição, códigos e valores: 
+
+Elabore um programa em Python que: 
+
+Entre com o código do produto desejado; 
+
+Pergunte se o cliente quer pedir mais alguma coisa (se sim repetir o passo item 2.  Caso contrário ir para próximo passo);  
+
+Encerre a conta do cliente com o valor total; 
+
+Deve-se utilizar estruturas if, elif e else (EXIGÊNCIA 1 de 3); 
+
+Se a pessoa digitar um NÚMERO diferente dos da tabela printar na tela: ‘opção inválida’ e voltar para o menu (EXIGÊNCIA 2 de 3); 
+
+Deve-se utilizar while, break, continue (EXIGÊNCIA 3 de 3); 
+
+(DICA: utilizar o continue dentro else que verifica a opção inválida) 
+
+(DICA: utilizar o break dentro elif que verifica a opção sair) 
+
+Colocar um exemplo de SAIDA DE CONSOLE com dois pedidos 
+
+Colocar um exemplo de SAIDA DE CONSOLE com erro ao digitar no pedido 

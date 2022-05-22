@@ -1,0 +1,57 @@
+Enunciado: Imagina-se que você está desenvolvendo um software de controle de estoque para uma bicicletaria. Este software deve ter o seguinte menu e opções: 
+
+Cadastrar Peça 
+
+Consultar Peça 
+
+Consultar Todas as Peças 
+
+Consulta Peças por Código 
+
+Consulta Peças por Fabricante 
+
+Retornar  
+
+Remover Peça 
+
+Sair 
+
+Elabore um programa em Python que: 
+
+Deve-se codificar uma função cadastrarPeca (código) (EXIGÊNCIA 1); 
+
+Essa função recebe como parâmetro um código exclusivo para cada peça cadastrado (DICA: utilize um contador como parâmetro)  
+
+Dentro da função perguntar o nome da peça; 
+
+Dentro da função perguntar o fabricante da peça; 
+
+Dentro da função perguntar o valor da peça 
+
+Cada peça cadastrada deve ter os seus dados armazenados num DICIONÁRIO (DICA: Conferir material escrito da p. 22 até p24  da AULA 06) 
+
+Deve-se codificar uma função consultarPeca(EXIGÊNCIA 2); 
+
+Dentro da função ter um menu com as seguintes opções: 
+
+Consultar Todas as Peças 
+
+Consultar Peças por Código 
+
+Consultar Peças por Fabricante 
+
+Retornar 
+
+Deve-se codificar uma função chamada removerPeca (EXIGÊNCIA 3); 
+
+Dentro da função perguntar qual o código do produto que se deseja remover do cadastro (da lista de dicionário) 
+
+Colocar um exemplo de SAIDA DO CONSOLE com o cadastro de 3 (ou mais) peças. Sendo que 2 delas do mesmo fabricante – ver figura 1 
+
+Colocar um exemplo de SAIDA DO CONSOLE com a consulta a todas as peças cadastradas – ver figura 2 
+
+Colocar um exemplo de SAIDA DO CONSOLE com uma consulta por código – ver figura 3 
+
+Colocar um exemplo de SAIDA DO CONSOLE com uma consulta por fabricante – ver figura 4 
+
+Colocar um exemplo de SAIDA DO CONSOLE ao remover um cadastro e mostrando depois todos os cadastros– ver figura 5 

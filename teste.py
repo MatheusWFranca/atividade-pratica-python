@@ -36,27 +36,15 @@ def consultarPeca():
                                 '3-Consultar peças por Fabricate\n'
                                 '4-Retornar\n'))
             if consultar == 1:
+                print('-------')
                 for peca in pecas:
-                    print('-------')
                     for key, value in peca.items():
                         print('{} : {}'.format(key, value))
 
             elif consultar == 2:
                 codigoPeca = int(input('Digite o CÓDIGO da Peça:'))
-                for peca in pecas:
-                    print('-------')
-                    if(peca['Codigo'] == codigoPeca):
-                        for key, value in peca.items():
-                            print('{} : {}'.format(key, value))
-
             elif consultar == 3:
-                fabricante = input('Digite o FABRICANTE da Peça:')
-                for peca in pecas:
-                    print('-------')
-                    if(peca['Fabricante'] == fabricante):
-                        for key, value in peca.items():
-                            print('{} : {}'.format(key, value))
-
+                fabricante = int(input('Digite o FABRICANTE da Peça:'))
             elif consultar == 4:
                 return
             else:
@@ -66,13 +54,6 @@ def consultarPeca():
             print('')
 
 
-def removerPeca():
-    print('Você selecionou a opção de remover a peça')
-    entrada = int(input('Digite o código da peça que deseja remover:'))
-    for peca in pecas:
-        if(peca['Codigo'] == entrada):
-            pecas.remove(peca)
-            print('Peça removida com sucesso!')
 while True:
     try:
         opcao = int(input('Digite a opção desejada: \n'
@@ -92,7 +73,6 @@ while True:
 
         elif opcao == 4:
             print('Programa finalizado')
-            break
 
         else:
             print('Você não digitou uma opcão inválida')

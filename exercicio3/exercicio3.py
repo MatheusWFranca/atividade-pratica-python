@@ -1,45 +1,41 @@
-from calendar import c
-from operator import iand
-from tokenize import Number
-
-
 print('Bem-vindo a companhia de Logistica Matheus Willian França')
 
 
 def dimensoesObjeto():
-    while True:   
+    while True:
         try:
-            comprimento = int(input('Digite o comprimento do objeto (Em CM)'))
-            largura = int(input('Digite o largura do objeto (Em CM)'))
-            altura = int(input('Digite a altura do objeto (Em CM)'))
+            comprimento = float(input('Digite o comprimento do objeto (Em CM)'))
+            largura = float(input('Digite o largura do objeto (Em CM)'))
+            altura = float(input('Digite a altura do objeto (Em CM)'))
             volume = comprimento * largura * altura
-            print('Volume do seu objeto é de objeto {} cm3'.format(volume)) 
-            if(volume < 1000):
+            print('Volume do seu objeto é {} cm3'.format(volume))
+            if (volume < 1000):
                 return 10
-        
-            elif(volume  >= 1000 and volume <= 10000):
+
+            elif (volume >= 1000 and volume <= 10000):
                 return 20
 
-            elif(volume >= 10000 and volume <= 30000):
+            elif (volume >= 10000 and volume <= 30000):
                 return 30
 
-            elif(volume >= 30000 and volume <= 100000):
+            elif (volume >= 30000 and volume <= 100000):
                 return 50
-        
+
             else:
-                print('Não aceitamos objetos com valores tão grandes...')
+                print('Não aceitamos objetos com dimensões tão grandes...')
                 print('Entre com as dimensões novamente')
                 continue
         except ValueError:
-            print('Digite um valor válido...')
+            print('Você digitou as dimensões com valor não numérico')
             print('Entre com as dimensões corretas novamente')
             continue
+
 
 def peso():
     while True:
         try:
-            objetoPeso = int(input('Digite o peso'))         
-            if(objetoPeso < 0.1):
+            objetoPeso = float(input('Digite o peso'))
+            if (objetoPeso < 0.1):
                 return 1
             elif (objetoPeso > 0.1 and objetoPeso < 1):
                 return 1.5
@@ -52,10 +48,13 @@ def peso():
                 print('Entre com o peso novamente')
                 continue
         except ValueError:
-            print('Caracter invalido')
+            print('Você digitou o peso com valor não numérico')
+            print('Entre com o peso novamente')
             continue
+
+
 def tarifas():
-    while True:  
+    while True:
         try:
             print('BR - De Brasília para Rio de Janeiro')
             print('BS - De Brasília para São paulo')
@@ -81,9 +80,10 @@ def tarifas():
         except ValueError:
             print('Digitou uma rota que não existe\n ')
 
+
 dimensoesFinal = dimensoesObjeto()
 pesoFinal = peso()
 tarifasFinal = tarifas()
 
-print('Total a pagar: R${} (dimensões {} * peso: {} * rota: {})'.format((dimensoesFinal * pesoFinal * tarifasFinal), dimensoesFinal, pesoFinal, tarifasFinal))
+print('Total a pagar: R${} (dimensões {} * peso: {} * rota: {:.2f})'.format((dimensoesFinal * pesoFinal * tarifasFinal), dimensoesFinal, pesoFinal, tarifasFinal))
 

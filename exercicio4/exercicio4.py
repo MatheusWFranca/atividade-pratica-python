@@ -12,10 +12,10 @@ def cadastraPeca(): # função para cadastrar a peça
             for i in range(4): # loop para o cadastro de peças
                 codigo = len(pecas) + 1 # captura o length do numero de peças cadastradas e adiciona + 1
                 peca['Codigo'] = codigo
-                print('Seu codigo é {}'.format(codigo))
+                print('Código da Peça é: {}'.format(codigo))
                 peca['Nome:'] = input('Por favor entre com o nome da peça')
                 peca['Fabricante'] = input('Por favor entre com o FABRICANTE da peça')
-                peca['Valor'] = input('Por favor entre com o VALOR(R$) da Peça')
+                peca['Valor'] = float(input('Por favor entre com o VALOR(R$) da Peça'))
                 pecas.append(peca.copy()) #adiciona a lista cadastrada ao dicionário peças
                 return
         except ValueError: #captura o erro de digitação do usuário
@@ -30,30 +30,30 @@ def consultarPeca(): # função para consultar a peças
             consultar = int(input('Entre com a opção desejada:\n' #input para o menu desejado
                                 '1-Consultar Todas as Peças\n'
                                 '2-Consultar Peças por código\n'
-                                '3-Consultar peças por Fabricate\n'
+                                '3-Consultar peças por Fabricante\n'
                                 '4-Retornar\n'))
             if consultar == 1:
                 for peca in pecas: # o loop percore todas as peças cadastradas
-                    print('-------')
+                    print('---------')
                     for key, value in peca.items():  #printa para o usuário todas as peças
                         print('{} : {}'.format(key, value))
 
             elif consultar == 2:
                 codigoPeca = int(input('Digite o CÓDIGO da Peça:'))
                 for peca in pecas: # o loop percore todas as peças cadastradas
-                    print('-------')
-                    if(peca['Codigo'] == codigoPeca): # o loop percore todas as pecas que estiveram com o código digitado pelo usuário
+                    print('---------')
+                    if(peca['Codigo'] == codigoPeca):# o loop percore todas as pecas que estiveram com o código digitado pelo usuário
                         for key, value in peca.items():
                             print('{} : {}'.format(key, value))
-
+               
             elif consultar == 3:
                 fabricante = input('Digite o FABRICANTE da Peça:')
                 for peca in pecas:
-                    print('-------')
+                    print('---------')
                     if(peca['Fabricante'] == fabricante): # o loop percore todas as pecas que estiveram com o nome do fabricante cadastrado
                         for key, value in peca.items():
                             print('{} : {}'.format(key, value))
-
+               
             elif consultar == 4: # se o usuário digitar 4, ele retorna para o começo do menu
                 return
             else:

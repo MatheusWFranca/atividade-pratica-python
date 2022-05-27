@@ -72,13 +72,26 @@ def removerPeca():
             print('Peça removida com sucesso!')
 
 
+def editarCadastroPeca():
+    print('Você selecinou a opção de editar o cadastro')
+    entrada = int(input('Digite o código da peça'))
+    for peca in pecas:
+        if(peca['Codigo'] == entrada):
+                pecas.remove(peca)
+                peca['Nome:'] = input('Por favor entre com o novo nome da peça')
+                peca['Fabricante'] = input('Por favor entre com o  novo FABRICANTE da peça')
+                peca['Valor'] = float(input('Por favor entre com o  novo VALOR(R$) da Peça'))
+                pecas.append(peca.copy())
+                print('Cadastro editado com sucesso')
+    return
 while True: #Entrada principal dos menus
     try:
         opcao = int(input('Digite a opção desejada: \n'
                           '1-Cadastrar peça\n'
                           '2-Consultar peça\n'
                           '3-Remover peça\n'
-                          '4-Sair''\n'))
+                          '4-Editar dados já cadastrados\n'
+                          '5-Sair''\n'))
 
 
         # verificação abaixo das entradas do usuário
@@ -92,6 +105,9 @@ while True: #Entrada principal dos menus
             removerPeca()
 
         elif opcao == 4:
+            editarCadastroPeca()
+
+        elif opcao == 5:
             print('Programa finalizado')
             break
 
